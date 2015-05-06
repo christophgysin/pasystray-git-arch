@@ -8,7 +8,8 @@ arch=('i686' 'x86_64')
 url="https://github.com/christophgysin/pasystray"
 license=('LGPL')
 groups=('multimedia')
-depends=('libpulse' 'gtk3' 'libnotify' 'avahi' 'libx11' 'gnome-icon-theme')
+depends=('libpulse' 'gtk3' 'libnotify' 'avahi' 'libx11' 'gnome-icon-theme'
+    'gtk-update-icon-cache')
 makedepends=('git' 'pkg-config' )
 optdepends=(
     'paman: Launch PulseAudio manager from tray icon'
@@ -20,6 +21,7 @@ provides=('pasystray')
 conflicts=('pasystray')
 backup=()
 options=()
+install='pasystray.install'
 source=(git+https://github.com/christophgysin/pasystray.git)
 noextract=()
 md5sums=('SKIP')
