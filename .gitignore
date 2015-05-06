@@ -1,0 +1,5 @@
+.SRCINFO
+pasystray-*.tar.*
+pasystray/
+pkg/
+src/
